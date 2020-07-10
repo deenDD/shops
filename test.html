@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+  <title>modal</title>
+ 
+
+
+<style>
+ .bg-hid{
+   background-color: palegoldenrod;
+   border: 1px solid gray;
+   position: absolute;
+   left: -100vw;
+ }
+
+ .bg-show{
+ display: none;
+ }
+
+ .bg-o{
+   background-color: red;
+   border: 1px solid gray;
+   position: absolute;
+
+ }
+.hidden_box {
+  margin: 2em 0;
+  padding: 0;
+}
+
+/* ボタン装飾 */
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    border: solid 2px black;
+    cursor: pointer;
+}
+/* ボタンホバー時 */
+.hidden_box label:hover{
+    background-color: #efefef;
+}
+.hidden_box input {
+    display: none;
+    /* transform: scale(5);
+    position: absolute;
+    left: 50%; */
+}
+/* 中身を非表示にしておく */
+.hidden_box .hidden_show{
+  position: absolute;
+  left: -100vw;
+  /* height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s; */
+}
+.hidden_box input:checked ~.hidden_show {
+  /* padding: 10px 0;
+  height: auto;
+  opacity: 1; */
+  position: absolute;
+right: 10vw;
+
+}
+
+</style>
+
+
+</head>
+<body>
+ 
+
+<!-- ハンバーガを表示 -->
+
+<!-- ハンバーガを閉じる -->
+<!-- ハンバーガのサイドを触るとオンオフ -->
+<div class="hidden_box">
+  <label for="label1">クリックして表示</label>
+  <input type="checkbox" id = "label1">
+  <div class="hidden_show">
+  <!-- 非表示はここから -->
+    <p><img src="new1.png" alt=""></p>
+  </div>
+</div>
+
+
+
+<input type="">
+<div class="bg-y" for="label1">home
+
+</div>
+<div class="bg-y">home
+
+</div>
+<div class="bg-y">about
+
+</div>
+<div class="bg-y">contact
+
+</div>
+<div class="bg-y">link
+
+</div>
+   
+ 
+ 
+
+  <div class="container " >  
+
+
+
+
+</div >***</container>***
+
+
+
+
+</div>
+</div> <!-- </containert> -->
+
+
+  <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>$(function () {
+  $('[data-toggle="popover"]').popover()
+})</script>
+</body>
+</html>
